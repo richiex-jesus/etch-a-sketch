@@ -23,7 +23,7 @@ chooseButton.addEventListener('click', (e) => {
     } else {
     gridContainer.replaceChildren();
     createGrid(input);
-    newGridInteraction(chooseButton);
+    newGridInteraction();
     }
 })
 
@@ -52,6 +52,7 @@ function createGrid(input) {
 }
 
 function newGridInteraction() {
+    let gridDivs = document.querySelectorAll(".gridDivs");  
     gridDivs.forEach(div => {
     div.addEventListener('mouseover', (e) => {
         e.target.style.backgroundColor = 'green';
