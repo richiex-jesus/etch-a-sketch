@@ -1,4 +1,19 @@
-body {
+.overall-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.content {
     display: flex;
     justify-content: center;
     align-items: center
@@ -9,7 +24,7 @@ body {
     background-color: beige;
     width: 960px;
     height: 960px;
-    flex: 0 0 auto;
+    flex: 0 0 1;
     flex-wrap: wrap;
 }
 
@@ -28,6 +43,23 @@ body {
     flex: 1 1 0;
     background-color: white;
 }
+
+#new-grid {
+    background-color: black;
+    font-size: 25px;
+    color: white;
+    border-radius: 5px;
+    margin: 10px
+}
+
+#reset-grid {
+    background-color: black;
+    font-size: 25px;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
 
 
 

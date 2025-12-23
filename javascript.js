@@ -23,9 +23,21 @@ chooseButton.addEventListener('click', (e) => {
     } else {
     gridContainer.replaceChildren();
     createGrid(input);
-    newGridInteraction();
+    newGridInteraction(chooseButton);
     }
 })
+
+function resetGrid() {
+    let resetButton = document.getElementById('reset-grid');
+    resetButton.addEventListener('click', () => {
+        let gridDivs = document.querySelectorAll('.gridDivs');
+        gridDivs.forEach(div => {
+            div.style.backgroundColor = 'transparent';
+        });
+    })
+}
+
+resetGrid();
 
 function createGrid(input) {
     for (i = 0; i < input ** 2; i++) {
@@ -40,7 +52,6 @@ function createGrid(input) {
 }
 
 function newGridInteraction() {
-    let gridDivs = document.querySelectorAll(".gridDivs")
     gridDivs.forEach(div => {
     div.addEventListener('mouseover', (e) => {
         e.target.style.backgroundColor = 'green';
