@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#grid-container {
+    display: flex;
+    background-color: beige;
+    width: 960px;
+    height: 960px;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+}
+
+.left-sidebar {
+    display: flex;
+    width: auto;
+    height: 960px;
+    flex: 1 1 0;
+    background-color: white;
+}
+
+.right-sidebar {
+    display: flex;
+    width: auto;
+    height: 960px;
+    flex: 1 1 0;
+    background-color: white;
+}
+
+
+
+
+
